@@ -1,9 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Link from 'next/link'
 
-class HomePage extends Component {
-  render() {
-    return <div>hi</div>
-  }
-}
+const HomePage = () => (
+  <div>
+    <p>hey!</p>
+    <Link href={'/sell'}>
+      <a>sell</a>
+    </Link>
+  </div>
+)
 
 export default HomePage
